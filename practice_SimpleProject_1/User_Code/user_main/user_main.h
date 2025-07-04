@@ -14,6 +14,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "def.h"
+#include "LCD_I2C_16x2.h"
 
 
 
@@ -38,6 +39,7 @@ extern struct adc1_structure adc1;
 extern UART_HandleTypeDef huart1;
 extern ADC_HandleTypeDef hadc1;
 extern DMA_HandleTypeDef hdma_adc1;
+extern I2C_HandleTypeDef hi2c1;
 
 
 

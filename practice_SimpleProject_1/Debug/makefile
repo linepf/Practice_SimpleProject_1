@@ -10,6 +10,7 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include User_Code/user_main/subdir.mk
+-include User_Code/dev/subdir.mk
 -include Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
@@ -61,8 +62,8 @@ all: main-build
 main-build: practice_SimpleProject_1.elf secondary-outputs
 
 # Tool invocations
-practice_SimpleProject_1.elf practice_SimpleProject_1.map: $(OBJS) $(USER_OBJS) E:\practice_SimpleProject_1\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "practice_SimpleProject_1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\practice_SimpleProject_1\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="practice_SimpleProject_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+practice_SimpleProject_1.elf practice_SimpleProject_1.map: $(OBJS) $(USER_OBJS) E:\GitHub\practice_SimpleProject_1\practice_SimpleProject_1\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "practice_SimpleProject_1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\GitHub\practice_SimpleProject_1\practice_SimpleProject_1\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="practice_SimpleProject_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

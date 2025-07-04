@@ -10,10 +10,11 @@
 #include "user_main.h"
 #include "UART.h"
 
-struct adc1_structure adc1;
-
-
 void user_main() {
+
+      LCD_Init();
+	  LCD_setCursor(0,0);
+	  LCD_print_String(">> Hlhhdd%d -%d",1,90);
 
 	while (1) {
 
