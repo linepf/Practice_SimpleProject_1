@@ -3,6 +3,13 @@
  *
  *  Created on: Jul 4, 2025
  *      Author: JJH
+ *
+ *     I2C설정은 기본 설정으로 한다
+ *     기본모드
+ *     100000hz
+ *     Primary Address Length selection 7bit
+ *     나머지는 전부 disabled
+ *
  */
 
 #ifndef DEV_LCD_I2C_16X2_H_
