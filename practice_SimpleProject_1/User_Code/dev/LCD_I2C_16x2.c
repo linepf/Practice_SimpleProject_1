@@ -8,7 +8,7 @@
 #include "LCD_I2C_16x2.h"
 
 /*
-* @brief	데이터 또는 명령어를 받아서 실제로 LCD로 보내는 함수
+* @brief	데이터 또는 명령어를 받아서 실제로 I2C통신을 이용해 LCD로 보내는 함수
 * @details
 * @param	cmd, flag
 * @return	viod
@@ -39,13 +39,6 @@ void LCD_print_Cmd(uint8_t cmd) {
 }
 
 /*
-* @brief	데이터를 LCD로 출력하는 함수
-* @details	내부적으로 LCD_SendData로 명령어 전송
-* @param	data
-* @return	void
-*/
-
-/*
 * @brief	글자를 출력하는 함수
 * @details	글자를 받아서 내부적으로 LCD_SendData로 한 워드씩 출력
 * @param	str
@@ -65,6 +58,12 @@ void LCD_print_String(char *format, ...) {
     }
 }
 
+/*
+* @brief	데이터를 LCD로 출력하는 함수
+* @details	내부적으로 LCD_SendData로 명령어 전송
+* @param	data
+* @return	void
+*/
 void LCD_SendData(uint8_t data) {
   LCD_SendInternal(data, 0x01);
 }

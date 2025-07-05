@@ -4,7 +4,7 @@
  *  Created on: Jul 4, 2025
  *      Author: JJH
  *
- *     I2C설정은 기본 설정으로 한다
+ *     I2C설정은 기본 설정으로 한다 i2c1사용
  *     기본모드
  *     100000hz
  *     Primary Address Length selection 7bit
