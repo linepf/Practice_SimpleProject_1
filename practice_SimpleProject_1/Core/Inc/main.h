@@ -59,6 +59,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define Trig_Pin GPIO_PIN_15
+#define Trig_GPIO_Port GPIOB
+#define DHT11_Pin GPIO_PIN_12
+#define DHT11_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 

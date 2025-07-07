@@ -14,42 +14,36 @@ struct HC_SR04_structure HC_SR04;
 * @brief	HC_SR04 모듈 초기화 함수
 * @details	타이머, 체널선택 및 연산에 필요한 변수값 초기화
 * @param	사용할 타이머 주소 주소, 사용할 체널 1~4까지 정수로 입력
-* @return	viod
+* @return	void
 */
-void HC_SR04_Init(TIM_HandleTypeDef* htim, int CHANNEL){
+void HC_SR04_Init(){
 	HC_SR04.IC_Val1 = 0;
 	HC_SR04.IC_Val2 = 0;
 	HC_SR04.Difference = 0;
 	HC_SR04.Is_First_Captured = 0;
 	HC_SR04.Distance = 0;
-	HC_SR04.HC_SR04_timer = htim;
+	HC_SR04.HC_SR04_timer = &TIMER_HC_SR04;
 
 	uint32_t temp = 0;
 
-	switch(CHANNEL){
+	switch(CHALLEL_NUMBER){
 	case 1:
 		temp = TIM_CHANNEL_1;
+		break;
 	case 2:
 		temp = TIM_CHANNEL_2;
+		break;
 	case 3:
 		temp = TIM_CHANNEL_3;
+		break;
 	case 4:
 		temp = TIM_CHANNEL_4;
+		break;
 	}
 
 	HAL_TIM_IC_Start_IT(HC_SR04.HC_SR04_timer, temp);
 }
 
-/*
-* @brief	us단위의 딜레이함수
-* @details	HC_SR04 모듈의 트리거를 위해서 사용
-* @param	딜레이할 정수값 입력 ex) 10이면 10us딜레이
-* @return	viod
-*/
-void delay_us(uint16_t time){
-	__HAL_TIM_SET_COUNTER(HC_SR04.HC_SR04_timer, 0);
-	while (__HAL_TIM_GET_COUNTER (HC_SR04.HC_SR04_timer) < time);
-}
 
 /*
 * @brief	HC_SR04 모듈의 거리값읽는 함수
@@ -58,11 +52,14 @@ void delay_us(uint16_t time){
 * @param	void
 * @return	void
 */
-void HC_SR04_Read(void){
+int HC_SR04_Read(void) {
 	Trig(1);
 	delay_us(10);
 	Trig(0);
+
 	__HAL_TIM_ENABLE_IT(HC_SR04.HC_SR04_timer, TIM_IT_CC1);
+
+	return HC_SR04.Distance;
 }
 
 /*

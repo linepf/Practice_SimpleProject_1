@@ -30,9 +30,11 @@ User_Code/user_main/user_main.o: ../User_Code/user_main/user_main.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
  E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/user_main/user_main.h \
  ../User_Code/user_main/def.h \
+ E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/common/common.h \
  E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/LCD_I2C_16x2.h \
  E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/HC_SR04.h \
- ../User_Code/user_main/UART.h
+ ../User_Code/user_main/UART.h \
+ E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/DHT11.h
 ../User_Code/user_main/user_main.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
@@ -65,6 +67,8 @@ User_Code/user_main/user_main.o: ../User_Code/user_main/user_main.c \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
 E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/user_main/user_main.h:
 ../User_Code/user_main/def.h:
+E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/common/common.h:
 E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/LCD_I2C_16x2.h:
 E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/HC_SR04.h:
 ../User_Code/user_main/UART.h:
+E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/DHT11.h:

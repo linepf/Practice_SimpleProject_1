@@ -14,10 +14,11 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "def.h"
+#include "common.h"
 #include "LCD_I2C_16x2.h"
 #include "HC_SR04.h"
 #include "UART.h"
-
+#include "DHT11.h"
 
 
 struct adc1_structure {
@@ -25,16 +26,10 @@ struct adc1_structure {
 	int adcflag;
 };
 
-struct uart1_structure {
-	uint8_t RxBuffer[0xff];
-	uint8_t enter;
-};
 
 
 void user_main();
 
-
-extern struct uart1_structure uart1;
 extern struct adc1_structure adc1;
 
 
@@ -43,8 +38,6 @@ extern ADC_HandleTypeDef hadc1;
 extern DMA_HandleTypeDef hdma_adc1;
 extern I2C_HandleTypeDef hi2c1;
 extern TIM_HandleTypeDef htim1;
-
-
 
 
 #endif /* USER_MAIN_USER_MAIN_H_ */

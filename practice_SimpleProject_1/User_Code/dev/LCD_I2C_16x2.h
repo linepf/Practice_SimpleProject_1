@@ -18,10 +18,12 @@
 #include "user_main.h"
 #include <stdarg.h>
 
-#define LCD_ADDR (0x3f << 1) //lcd 주소
-#define LCD_CLEARDISPLAY 0x01	//lcd화면 클리어
-#define LCD_SETDDRAMADDR 0x80	//
-#define LCD_LINES 2 //16X2 numlines
+#define I2C_LCD_I2C_16X2	hi2c1				// 사용할 I2C 핸들러 입력
+#define LCD_ADDR 			(0x3f << 1) 	//lcd 주소
+#define LCD_CLEARDISPLAY 	0x01			//lcd화면 클리어
+#define LCD_SETDDRAMADDR 	0x80			//
+#define LCD_LINES 			2 				//16X2 numlines
+
 
 void LCD_SendInternal(uint8_t cmd, uint8_t flag);
 void LCD_print_Cmd(uint8_t cmd);

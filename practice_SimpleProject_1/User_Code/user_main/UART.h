@@ -11,6 +11,7 @@
 #include "user_main.h"
 #include <stdarg.h>
 
+#define UART		  		huart1	// 사용할 UART 핸들러 입력
 
 int UART_print(char *format, ...);
 

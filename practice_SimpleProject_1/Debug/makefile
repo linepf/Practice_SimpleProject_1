@@ -11,6 +11,7 @@ RM := rm -rf
 -include sources.mk
 -include User_Code/user_main/subdir.mk
 -include User_Code/dev/subdir.mk
+-include User_Code/common/subdir.mk
 -include Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk

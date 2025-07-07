@@ -24,7 +24,7 @@ void LCD_SendInternal(uint8_t cmd, uint8_t flag)
   data_t[1] = data_u|flag|0x08;
   data_t[2] = data_l|flag|0x0C;
   data_t[3] = data_l|flag|0x08;
-  HAL_I2C_Master_Transmit (&hi2c1, LCD_ADDR,data_t, sizeof(data_t), HAL_MAX_DELAY);
+  HAL_I2C_Master_Transmit (&I2C_LCD_I2C_16X2, LCD_ADDR,data_t, sizeof(data_t), HAL_MAX_DELAY);
   HAL_Delay(5);
 }
 
