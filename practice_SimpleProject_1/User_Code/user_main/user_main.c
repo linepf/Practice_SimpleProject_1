@@ -19,12 +19,6 @@ void user_main() {
 	WS2812B_Init();
 	WS2812B_OFFPixel();
 	HAL_Delay(500);
-	int r=0,g=0,b=0;
-	int a=255;
-	int i=0;
-
-
-
 
 
 	//WS2812B_SetPixel(4,0,250,0);
