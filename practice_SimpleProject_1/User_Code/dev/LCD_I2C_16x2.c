@@ -11,7 +11,7 @@
 * @brief	데이터 또는 명령어를 받아서 실제로 I2C통신을 이용해 LCD로 보내는 함수
 * @details
 * @param	cmd, flag
-* @return	viod
+* @return	void
 */
 void LCD_SendInternal(uint8_t cmd, uint8_t flag)
 {
@@ -32,7 +32,7 @@ void LCD_SendInternal(uint8_t cmd, uint8_t flag)
 * @brief	명령어를 LCD로 출력하는 함수
 * @details	내부적으로 LCD_SendData로 명령어 전송
 * @param	cmd
-* @return	viod
+* @return	void
 */
 void LCD_print_Cmd(uint8_t cmd) {
   LCD_SendInternal(cmd, 0x00);
@@ -42,7 +42,7 @@ void LCD_print_Cmd(uint8_t cmd) {
 * @brief	글자를 출력하는 함수
 * @details	글자를 받아서 내부적으로 LCD_SendData로 한 워드씩 출력
 * @param	str
-* @return	viod
+* @return	void
 */
 void LCD_print_String(char *format, ...) {
 	char buffer[256];

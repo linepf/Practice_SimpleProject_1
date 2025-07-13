@@ -33,7 +33,8 @@ User_Code/user_main/UART.o: ../User_Code/user_main/UART.c \
  E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/common/common.h \
  E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/LCD_I2C_16x2.h \
  E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/HC_SR04.h \
- E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/DHT11.h
+ E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/DHT11.h \
+ E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/WS2812B.h
 ../User_Code/user_main/UART.h:
 ../User_Code/user_main/user_main.h:
 ../Core/Inc/main.h:
@@ -71,3 +72,4 @@ E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/common/com
 E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/LCD_I2C_16x2.h:
 E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/HC_SR04.h:
 E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/DHT11.h:
+E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/WS2812B.h:

@@ -26,6 +26,7 @@
 "./User_Code/dev/DHT11.o"
 "./User_Code/dev/HC_SR04.o"
 "./User_Code/dev/LCD_I2C_16x2.o"
+"./User_Code/dev/WS2812B.o"
 "./User_Code/user_main/UART.o"
 "./User_Code/user_main/interrupt.o"
 "./User_Code/user_main/user_main.o"

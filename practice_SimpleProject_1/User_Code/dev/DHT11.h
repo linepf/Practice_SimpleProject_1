@@ -11,7 +11,6 @@
 #include "user_main.h"
 
 #define TIMER_DHT11		  		htim1	// 사용할 타이머 핸들러 입력
-//#define CHALLEL_NUMBER     	1	//사용할 타이머의 체널 번호입력
 
 #define DHT11_PORT		GPIOA  			// 트리터 포트 입력 ex) GPIOB
 #define DHT11_PIN     	GPIO_PIN_12   	// 트리거 포트 번호 입력 ex)GPIO_PIN_15

@@ -5,7 +5,6 @@
  *      Author: JJH
  */
 
-
 #include "DHT11.h"
 struct DHT11_structure DHT11;
 
@@ -97,12 +96,12 @@ uint8_t DHT11_Read_8bit(void) {
 			if (++timeout > 50) return 0xFF; // 타임아웃 50us 이상
 			delay_us(1);
 		}
-		delay_us(40);   // wait for 40 us
-		if (!(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN)))   // if the pin is low
+		delay_us(40);
+		if (!(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN)))
 		{
-			i &= ~(1 << (7 - j));   // write 0
+			i &= ~(1 << (7 - j));
 		} else
-			i |= (1 << (7 - j));  // if the pin is high, write 1
+			i |= (1 << (7 - j));
 		timeout = 0;
 		while (HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN)) {
 			if (++timeout > 50) return 0xFF; // 타임아웃 50us 이상
