@@ -24,6 +24,8 @@
 "./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
 "./User_Code/common/common.o"
 "./User_Code/dev/DHT11.o"
+"./User_Code/dev/DS18B20.o"
+"./User_Code/dev/HC_06.o"
 "./User_Code/dev/HC_SR04.o"
 "./User_Code/dev/LCD_I2C_16x2.o"
 "./User_Code/dev/WS2812B.o"

@@ -14,7 +14,7 @@ struct neo_structure neo;
 * @brief	WS2812B 초기 세팅, PWM_DMA활성화
 * @details	WS2812B로 보낼 배열의 데이터를 초기 세팅, BIT_OFFSET, 과 BIT_LOW를 미리 입력
 * @param	cmd, flag
-* @return	viod
+* @return	void
 */
 void WS2812B_Init(){
 	memset(&(neo.neo_data), 0, sizeof(neo.neo_data));
@@ -28,7 +28,7 @@ void WS2812B_Init(){
 * @brief	WS2812B set함수
 * @details	WS2812B로 보낼 배열의 데이터를 변환 r, g, b, 체널순번 을 받아서 배열의 데이터 변경
 * @param	ch, red, green, blue
-* @return	viod
+* @return	void
 */
 void WS2812B_SetPixel(uint8_t ch, uint8_t red, uint8_t green, uint8_t blue){
 

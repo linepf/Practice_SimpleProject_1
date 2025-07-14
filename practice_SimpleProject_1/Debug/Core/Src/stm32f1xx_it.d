@@ -36,6 +36,8 @@ Core/Src/stm32f1xx_it.o: ../Core/Src/stm32f1xx_it.c ../Core/Inc/main.h \
  E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/user_main/user_main.h \
  E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/DHT11.h \
  E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/WS2812B.h \
+ E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/HC_06.h \
+ E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/DS18B20.h \
  ../Core/Inc/stm32f1xx_it.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
@@ -75,4 +77,6 @@ E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/user_main/
 E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/user_main/user_main.h:
 E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/DHT11.h:
 E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/WS2812B.h:
+E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/HC_06.h:
+E:/GitHub/practice_SimpleProject_1/practice_SimpleProject_1/User_Code/dev/DS18B20.h:
 ../Core/Inc/stm32f1xx_it.h:

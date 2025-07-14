@@ -20,6 +20,8 @@
 #include "UART.h"
 #include "DHT11.h"
 #include "WS2812B.h"
+#include "HC_06.h"
+#include "DS18B20.h"
 
 
 struct adc1_structure {
@@ -35,6 +37,7 @@ extern struct adc1_structure adc1;
 
 
 extern UART_HandleTypeDef huart1;
+extern UART_HandleTypeDef huart3;
 extern ADC_HandleTypeDef hadc1;
 extern DMA_HandleTypeDef hdma_adc1;
 extern I2C_HandleTypeDef hi2c1;

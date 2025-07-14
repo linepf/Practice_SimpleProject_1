@@ -14,6 +14,10 @@
 * @return	viod
 */
 #ifdef USE_DELAY_US_TIMER
+void delay_us_Init(){
+	HAL_TIM_Base_Start(&DELAY_US_TIMER_HANDLE);
+}
+
 void delay_us(uint16_t time){
 	__HAL_TIM_SET_COUNTER(&DELAY_US_TIMER_HANDLE, 0);
 	while (__HAL_TIM_GET_COUNTER (&DELAY_US_TIMER_HANDLE) < time);
